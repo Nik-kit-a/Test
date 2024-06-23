@@ -1,0 +1,50 @@
+Мой
+def make_readable(seconds):
+    minute = seconds // 60
+    sec = seconds % 60
+    hour = minute // 60
+    minute = minute % 60
+    result = '{:02d}:{:02d}:{:02d}'
+    return result.format(hour, minute, sec)
+Лучший
+def make_readable(s):
+    return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
+
+
+
+
+
+
+
+
+
+МОй
+def get_count(sentence):
+    count = 0
+    vowels = 'aeiou'
+    for letter in sentence:
+        if letter in vowels:
+            count += 1
+    return count
+
+
+
+
+лучший 
+def getCount(s):
+    return sum(c in 'aeiou' for c in s)
+
+мой
+def basic_op(operator, value1, value2):
+    return eval(str(value1) + str(operator) + str(value2))
+
+
+
+мой
+return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
+
+
+
+удалить одинаковые вхождения в массив
+def array_diff(a, b):
+    return [x for x in a if x not in b]
